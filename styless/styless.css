@@ -1,0 +1,85 @@
+root{
+    --fonts:"Inter",sans-serif;
+}
+body{
+    width: 1440px;
+    height: 1024px;
+    background-color: white;
+    border: red solid 1px;
+    
+}
+.container{
+    width: 1240px;
+    height: 900px;
+    border: red solid 1px;
+    justify-content: center;
+    margin: 30px 30px 30px 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container__header{
+    width: 1240px;
+    height: 100px;
+    border: red solid 1px;  
+}
+.container__input{
+    width: 700px;
+    height: 600px;
+    border: red solid 1px;
+}
+.input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+}
+.input__text{
+    width: 400px;
+    height: 430px;
+}
+.container__output{
+    width: 440px;
+    height: 600px;
+    border: red solid 1px;
+}
+.container__buttons{
+    width: 740px;
+    height: 100px;
+    border: red solid 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__buttons__button{
+    display: flex;
+    gap: 20px;
+}
+.criptografar,
+.descriptografar{
+    background-color: brown;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    padding: 24px;
+    font-family: initial;
+    font-family: var(--fonts);
+    font-size: 16px;
+}
+.criptografar:hover,
+.descriptografar:hover{
+    background-color: #D8DFE8;
+}
+
+
+.rodape{
+    width: 1240px;
+    height: 50px;
+    border: red solid 1px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 90px;
+}
