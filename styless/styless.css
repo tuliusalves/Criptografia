@@ -1,19 +1,27 @@
-root{
+:root{
     --fonts:"Inter",sans-serif;
+    --bg_color:linear-gradient(135deg, #7D8EDB, #CC8CC0,#DBB376);
+    --bg_button:#0A162D;
+    --color_button_text: #B45453;
 }
+
 body{
-    width: 1440px;
     height: 1024px;
-    background-color: white;
+    background-image: white;
     border: red solid 1px;
+    color: var(--bg_button);
+    font-family: var(--fonts);
+    border-radius: 2%;
     
 }
 .container{
-    width: 1240px;
+    width: 1243px;
     height: 900px;
+    background-image: var(--bg_color);
     border: red solid 1px;
+    border-radius: 2%;
     justify-content: center;
-    margin: 30px 30px 30px 90px;
+    margin: 30px 0px 30px; 
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -21,15 +29,24 @@ body{
     flex-wrap: wrap;
 }
 .container__header{
-    width: 1240px;
+    width: 1243px;
     height: 100px;
     border: red solid 1px;  
 }
+.container__header h1{
+    margin-left: 2%;
+}
 .container__input{
-    width: 700px;
+    width: 500px;
     height: 600px;
     border: red solid 1px;
+    margin-left: 5%;
 }
+.container__input p{
+    font-weight: 400;
+    margin-left: 1%;
+}
+
 .input{
     display: flex;
     flex-wrap: wrap;
@@ -39,18 +56,28 @@ body{
 .input__text{
     width: 400px;
     height: 430px;
+    border-radius: 2%;
+    border-color: var(--bg_button) 1px solid;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    font-weight: 400;
+}
+::placeholder{
+    color: var(--bg_button);
 }
 .container__output{
     width: 440px;
     height: 600px;
     border: red solid 1px;
+    margin-left: 90px;
 }
 .container__buttons{
     width: 740px;
     height: 100px;
     border: red solid 1px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    margin-left: 5%;
     align-items: center;
 }
 
@@ -60,9 +87,10 @@ body{
 }
 .criptografar,
 .descriptografar{
-    background-color: brown;
+    background-color: var(--bg_button);
+    color: var(--color_button_text);
     height: 67px;
-    width: 328px;
+    width: 200px;
     border-radius: 24px;
     padding: 24px;
     font-family: initial;
@@ -76,10 +104,20 @@ body{
 
 
 .rodape{
-    width: 1240px;
+    width: 1140px;;
     height: 50px;
     border: red solid 1px;
     display: flex;
     justify-content: space-between;
     margin: 0px 0px 0px 90px;
+}
+.rodape__icons{
+    background-color: var(--bg_button);
+    display: flex;
+    gap: 22px;
+}
+.linkedin,
+.github{
+    color: var(--color_button_text);
+    font-size: 22px;
 }
