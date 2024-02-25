@@ -6,22 +6,19 @@
 }
 
 body{
-    height: 1024px;
+    height: 900px;
     background-image: white;
-    border: red solid 1px;
     color: var(--bg_button);
     font-family: var(--fonts);
-    border-radius: 2%;
     
 }
 .container{
-    width: 1243px;
-    height: 900px;
+    width: 1253px;
+    height: 940px;
     background-image: var(--bg_color);
-    border: red solid 1px;
-    border-radius: 2%;
+    border-radius: 7%;
     justify-content: center;
-    margin: 30px 0px 30px; 
+    margin: 0px 0px 10px; 
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -31,20 +28,18 @@ body{
 .container__header{
     width: 1243px;
     height: 100px;
-    border: red solid 1px;  
 }
 .container__header h1{
-    margin-left: 2%;
+    text-align: center;
 }
 .container__input{
     width: 500px;
-    height: 600px;
-    border: red solid 1px;
+    height: 500px;
     margin-left: 5%;
 }
 .container__input p{
     font-weight: 400;
-    margin-left: 1%;
+    margin-left: 6%;
 }
 
 .input{
@@ -61,23 +56,32 @@ body{
     background-color: rgba(0, 0, 0, 0.2);
     font-size: 24px;
     font-weight: 400;
+    margin:15% 0px 0px 5%;
 }
 ::placeholder{
     color: var(--bg_button);
 }
-.container__output{
+#container__output{
     width: 440px;
     height: 600px;
-    border: red solid 1px;
     margin-left: 90px;
+    padding: 2%;
+}
+.container__output__img{
+    width: 56px;
+    height: 56px;
+    display: flex;
+    margin-left: 45%;
+}
+#container__output h2{
+    text-align: center;
 }
 .container__buttons{
     width: 740px;
-    height: 100px;
-    border: red solid 1px;
+    height: 80px;
     display: flex;
     justify-content: flex-start;
-    margin-left: 5%;
+    margin-left: 8%;
     align-items: center;
 }
 
@@ -96,28 +100,39 @@ body{
     font-family: initial;
     font-family: var(--fonts);
     font-size: 16px;
+    transition: 0.2s;
 }
 .criptografar:hover,
 .descriptografar:hover{
-    background-color: #D8DFE8;
+    background-color: var(--color_button_text);
+    color: var(--bg_button);
+    font-weight: 800;
 }
 
 
 .rodape{
     width: 1140px;;
     height: 50px;
-    border: red solid 1px;
     display: flex;
-    justify-content: space-between;
-    margin: 0px 0px 0px 90px;
+    justify-content: center;
+    margin: 20px 0px 20px 90px;
 }
 .rodape__icons{
-    background-color: var(--bg_button);
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 22px;
 }
 .linkedin,
 .github{
-    color: var(--color_button_text);
+    color: var(--bg_button);
+    text-decoration: none;
     font-size: 22px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.linkedin:hover,
+.github:hover{
+    font-weight: 900;
 }

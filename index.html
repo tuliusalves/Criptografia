@@ -29,25 +29,26 @@
         </div>
       </div>
 
-      <div class="container__output">
-        <img src="" alt="logo" height="330px" width="400px" />
+      <div id="container__output">
+        <img class="container__output__img" src="./img/cryptography.png" alt="logo" height="330px" width="400px" />
         <h2>Sua mensagem aparecerá aqui</h2>
-        <span>Digite um texto que deseja criptografia ou descriptografar.</span>
+        <span class="container__output__span">Digite um texto que deseja criptografia ou descriptografar.</span>
       </div>
 
       <div class="container__buttons">
         <div class="container__buttons__button">
-          <button class="criptografar">Criptografar</button>
-          <button class="descriptografar">Descriptografar</button>
+          <button onclick="encrypt()" class="criptografar">Criptografar</button>
+          <button onclick="decrypt()" class="descriptografar">Descriptografar</button>
         </div>
       </div>
+      <footer class="rodape">
+        <div class="rodape__icons">
+          <a  class="linkedin" href="">linkedin</a>
+          <a class="github" href="">github</a>
+        </div>
+      </footer>
     </main>
-    <footer class="rodape">
-      <div class="rodape__icons">
-        <a class="linkedin" href="">linkedin</a>
-        <a class="github" href="">github</a>
-      </div>
-    </footer>
+ 
 
     <script src="app.js"></script>
   </body>
