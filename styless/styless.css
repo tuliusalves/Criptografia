@@ -76,6 +76,12 @@ body{
 #container__output h2{
     text-align: center;
 }
+.copiar{
+    margin-top: 475px;
+    align-items: center;
+    margin-left: 30%;
+    display:none;
+}
 .container__buttons{
     width: 740px;
     height: 80px;
@@ -89,6 +95,7 @@ body{
     display: flex;
     gap: 20px;
 }
+.copiar,
 .criptografar,
 .descriptografar{
     background-color: var(--bg_button);
@@ -102,6 +109,8 @@ body{
     font-size: 16px;
     transition: 0.2s;
 }
+
+.copiar:hover,
 .criptografar:hover,
 .descriptografar:hover{
     background-color: var(--color_button_text);

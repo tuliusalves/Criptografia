@@ -3,8 +3,10 @@ let outInput= document.querySelector('.container__output__span');
 
 let wordsEncrypted = ['enter','imes','ai','ober','ufat'];
 let messageElement;
+
 function encrypt(){
     let textAssistant = textInput.value;
+    if(!textAssistant==''){
         let newAssistant;
         newAssistant= textAssistant.replace(/\e/g,wordsEncrypted[0])
         .replace(/\i/g,wordsEncrypted[1])
@@ -14,7 +16,8 @@ function encrypt(){
 
         messageElement= document.querySelector('.container__output__span');
         messageElement.textContent = newAssistant;
-      
+        
+    }
 }
 function decrypt(){
    
@@ -28,5 +31,23 @@ function decrypt(){
     console.log(newAssistant);
     messageElement= document.querySelector('.container__output__span');
     messageElement.textContent = newAssistant;
-   
+
+}
+
+const botaoCriptografar = document.querySelector('.criptografar');
+const botaoCopiar = document.querySelector('.copiar');
+
+botaoCriptografar.addEventListener('click',function(){
+    botaoCopiar.style.display = 'block';
+});
+
+function copied(){
+    const spanOutput = document.querySelector('.container__output__span');
+    const textToCopy = spanOutput.textContent;
+
+    navigator.clipboard.writeText(textToCopy).then(function(){
+        alert('Texto copiado com sucesso!')
+    }, function(){
+        console.log('erro');
+    });
 }
