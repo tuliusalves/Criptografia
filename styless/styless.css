@@ -78,7 +78,7 @@ body{
     text-align: center;
 }
 .copiar{
-    margin-top: 340px;
+    margin-top: 300px;
     align-items: center;
     margin-left: 30%;
     display:none;
@@ -145,4 +145,130 @@ body{
 .linkedin:hover,
 .github:hover{
     font-weight: 900;
+}
+
+@media(width<1200px){
+    .container{
+        width: 100%;
+    }
+    .container__input{
+        width: 40%;
+    }
+    #container__output{
+        width: 40%;
+    }
+    .container__buttons{
+        height: 60px;
+    }
+    .copiar{
+        margin-top: 320px;
+    }
+    .copiar,
+    .descriptografar,
+    .criptografar{
+        width: 150px;
+        height: 64px;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+}
+@media(width<840px){
+    .container__input{
+        width: 30%;
+    }
+    #container__output{
+        width: 40%;
+        height: 200px;
+    }
+    #container__output h2{
+        font-size: 21px;
+    }
+    .container__output__span{
+        font-size: 14px;
+    }
+    .container__buttons__button{
+        width: 40%;
+        height: 150px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .copiar{
+        margin-top: 250px;
+        
+    }
+    .copiar,
+    .descriptografar,
+    .criptografar{
+        width: 35%;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        overflow: hidden;
+        text-align: center;
+        
+    }
+
+    @media(width<420px){
+     
+        body{
+        display: flex;
+        flex-direction: column;
+        height: 1020px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 1500px;
+        }
+        .container__header{
+            width: 70%;
+            font-size: 20px;
+            display: flex;
+            font-size: 14px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 12%;
+        }
+
+        .container__input{
+            width: 80%;
+            height: 400px;
+        }
+        .container__buttons{
+            margin-left: 12%;
+        }
+        .input__text{
+            height: 350px;
+        }
+        p{
+            width: 100%;
+            padding-left: 9%;
+        }
+        #container__output{
+            align-items: center;
+            justify-content: center;
+            margin-top: 55%; 
+            height: 300px;
+        }
+        .container__output__img{
+            margin-left: 45px;
+        }
+        .container__output__span{
+            height: 320px;
+        }
+        .copiar{
+            margin:94% 0px 0px 22px;
+            width:100px;
+        }
+        .rodape{
+            width: 40%;
+            margin-top: 40%;
+        }
+
+    }
+       
 }
