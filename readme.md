@@ -27,3 +27,8 @@
 <p>qualquer lugar.</p>
 
 ![Demonstracao_03](https://github.com/tuliusalves/Criptografia/blob/main/screens/Demonstracao_03.PNG)
+
+
+## Observações
+<p>Este é apenas um projeto de criptografia básica. Não </p>
+<p>foram implementados aqui algoritmos como: AES ou RSA. </p>

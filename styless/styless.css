@@ -217,11 +217,13 @@ body{
         body{
         display: flex;
         flex-direction: column;
-        height: 1020px;
+        height: 900px;
         }
         .container{
             display: flex;
             flex-direction: column;
+            width: 100%;
+            margin:0px 2% 0px 1%; 
             height: 1500px;
         }
         .container__header{
