@@ -13,12 +13,12 @@ body{
     
 }
 .container{
-    width: 1253px;
+    width: 99%;
     height: 780px;
     background-image: var(--bg_color);
     border-radius: 9%;
     justify-content: center;
-    margin: 40px -10px 30px;
+    margin: 40px 0px 30px 0px;
     padding-left: 28px; 
     display: flex;
     flex-direction: row;
